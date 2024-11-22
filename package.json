@@ -6,13 +6,9 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "build": "npm run clean && tsc -b",
-    "start": "node src",
+    "start": "tsc -b && node src",
     "local": "ts-node src",
     "local:watch": "nodemon src -e ts,json --exec 'npm run local'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com-personal:Sajal0208/nodejs-errors-handling-template.git"
   },
   "keywords": [],
   "author": "",
